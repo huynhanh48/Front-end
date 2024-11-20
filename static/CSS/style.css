@@ -388,7 +388,8 @@ line-height: 27px;
     display: flex;
 }
 .box-first .row .icon{
-    margin-left:auto ;
+    object-fit: contain;
+    margin-left: auto;
 }
 .box-first .rate{
 font-size: 2.6rem;
