@@ -59,6 +59,7 @@ img{
     font-weight: 500;
     line-height: 2.1rem;
     padding: 1.8rem 1.4rem;
+    color:#4F5361 ;
 }
 .navbar ul a:hover{
     text-decoration: underline;
