@@ -569,13 +569,13 @@ font-weight: 600;
     margin:  0 5px;
     padding: 5px 5px;
     border-radius: 2px;
-    background: #ddd;
+    background: #f9f9f9;
     
 }
 .footer .link:first-child{
     width: 21px;
 }
 .footer .link:hover{
-    background-color: #a0a2a7;
+    background-color: #ccc;
     backdrop-filter: blur(50px);
 }
