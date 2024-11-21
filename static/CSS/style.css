@@ -142,18 +142,19 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 96px;
-    margin-bottom: 20px;
 }
-.client .images img:nth-child(3){
-    width: 204px;
+.client .images a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 42px;
+    margin: 70px 0 48px;
     height: 91px;
-    /* border: 0 solid #ccc; */
-    border-radius:12px ;
-    box-shadow: 0 0 10px 5px #cccaca;
-    width: 204px;
-
-} 
+    border-radius: 12px;
+}
+.client .images a:hover{
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
 .guides{
     margin-top: 93px;
 }
