@@ -5,6 +5,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-size: 1.6rem;
@@ -42,7 +43,7 @@ img{
 /* header */
 .header{
     background: #E6F0FF;
-    height: 100vh;
+    height: calc(100vh - 91px);
     position: relative;
 }
 .sticky-header{
@@ -50,12 +51,16 @@ img{
     padding-top: 2.6rem;
     background-color: #e6f0ff ;
     top: -26px;
+    height: 91px;
     z-index: 2;
 }
 .navbar{
     display: flex;
     align-items: center;
     padding: 12px 0;
+}
+.navbar .logo{
+
 }
 .navbar ul{
     display: flex;
@@ -74,6 +79,9 @@ img{
 .navbar .action{
     margin-left: auto;
 }
+.action .action-link{
+    color: #4F5361;
+}
 .navbar .action-link {
     font-size: 14px;
     font-weight: 500;
@@ -83,15 +91,18 @@ img{
     margin-left: 1.8rem;
 }
 /* hero */
-.hero{
+.hero-wrap{
  display: flex;   
+ position: relative;
  justify-items: center;
  align-items: center;
+ background-color:#e6f0ff ;
+ height: calc(100vh - 91px);
 }
-.hero .info{
+.hero-wrap .info{
     max-width: 53%;
 }
-.hero  .sub-title{
+.hero-wrap  .sub-title{
     color: #687690;
     margin-top: 130px;
     font-size: 1.8rem;
@@ -99,14 +110,14 @@ img{
     line-height: 1.5;
     letter-spacing: 0.01em;
 }
-.hero .title{
+.hero-wrap .title{
     color: var(--primary-color);
     font-family: Poppins;
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 76px;
 }
-.hero  .desc{
+.hero-wrap  .desc{
     color: #5A6473;
     font-family: Poppins;
     font-size: 1.8rem;
@@ -119,7 +130,7 @@ img{
     margin-top: 40px;
     min-width: 170px;
 }
-.hero-img{
+.hero-wrap .hero-img{
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) /  2 - 100px);
@@ -156,7 +167,7 @@ img{
     justify-content: center;
     padding: 0 42px;
     margin: 70px 0 48px;
-    height: 91px;
+    height: 90px;
     border-radius: 12px;
 }
 .client .images a:hover{
@@ -230,10 +241,12 @@ img{
 }
 .featured{
     margin-top: 41px;
-    background-color:  #E6F0FF;
+    background: #f5fafe;
 }
 .featured .header{
-    padding-top: 110px;   
+    padding-top: 110px ;
+    height: calc(100vh );
+    background: #f5fafe;
 }
 .featured .title{
 font-size: 3.5rem;
@@ -264,12 +277,16 @@ line-height: 27px;
     margin-top: 60px;
     display: flex;
     gap: 32px;
-    min-height: 357px;
+/*     
+    background-color: red; */
 }
 .featured .item{
+    height: 400px;
+    width: 350px;
     flex: 1;
     background-color:#fff;
     border-radius: 12px;
+
 }
 .featured .item .thumb{
     width: 100%;
