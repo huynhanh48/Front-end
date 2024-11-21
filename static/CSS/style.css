@@ -45,10 +45,17 @@ img{
     height: 100vh;
     position: relative;
 }
+.sticky-header{
+    position: sticky;
+    padding-top: 2.6rem;
+    background-color: #e6f0ff ;
+    top: -26px;
+    z-index: 2;
+}
 .navbar{
     display: flex;
     align-items: center;
-    padding-top: 3.8rem;
+    padding: 12px 0;
 }
 .navbar ul{
     display: flex;
@@ -174,7 +181,7 @@ img{
     background: #000339;
     top: 0;
     border-radius: 12px;
-     left: 50%;  /* - 50% relative */
+    left: 50%;  /* - 50% relative */
     right: 50%;
     transform: translateX(-50%);    /*  - 50%  so voi chinh no */
 }
