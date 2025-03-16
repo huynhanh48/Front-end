@@ -3,7 +3,7 @@
     <head>
         <!-- <link rel="stylesheet" href="./static/reset.css"> -->
         <meta charset="UTF-8" />
-        <meta name="viewport" div="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project1</title>
         <link rel="stylesheet" href="./static/CSS/reset.css" />
         <link
@@ -12,7 +12,9 @@
         />
         <link rel="stylesheet" href="./static/fonts/stylesheet.css" />
         <link rel="stylesheet" href="./static/CSS/style.css" />
+        <link rel="stylesheet" href="./static/CSS/responsive.css" />
         <!--favicon-->
+
         <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -97,8 +99,23 @@
             <div class="content">
                 <nav class="navbar">
                     <!-- logo -->
+                    <label class="menu-icons" for="check-drawer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                     <a href="./" class="logo"
-                        ><img src="./static/image/Logo.svg" alt="Besnik."
+                        ><img
+                            src="./static/image/Logo.svg"
+                            class="logo-img"
+                            alt="Besnik."
                     /></a>
                     <!-- navigation -->
                     <ul>
@@ -115,6 +132,18 @@
                     </div>
                 </nav>
             </div>
+        </header>
+
+        <!-- mobile/table -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="check-drawer"
+                class="check-drawer"
+            />
+            <div class="mobile-overlay"></div>
+            <div class="mobile-drawer"></div>
         </header>
         <main>
             <!-- Header -->

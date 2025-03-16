@@ -17,10 +17,9 @@ body{
 }
 /* common */
 .content{
-    width: 1110px;
+    width: 1170px;
     max-width: calc(100% - 48px);
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     /* overflow: auto; */
 }
 a{
