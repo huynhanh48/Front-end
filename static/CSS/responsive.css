@@ -197,7 +197,8 @@
     }
     .featured .item
     {
-        flex-shrink: 1;
+        width: 320px;
+        margin: 0 auto;
     }
     .featured .item
     {
